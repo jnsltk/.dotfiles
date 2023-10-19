@@ -1,0 +1,9 @@
+[user]
+	name = jnsltk
+	email = janos.litkei@gmail.com
+[core]
+	editor = nvim
+	autocrlf = input
+	commentChar = $
+[init]
+	defaultBranch = main
