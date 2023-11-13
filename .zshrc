@@ -15,7 +15,7 @@ export PATH
 export CLASSPATH=/home/jnsltk/code/gu/SWA/a4-group-11/microservices/mysql-connector-j-8.0.33.jar:/home/jnsltk/code/gu/SWA/a4-group-11/microservices
 
 # !! aliases for getting around quickly
-alias uni='cd ~/drive/_UNI/III/1/'
+alias uni='cd ~/drive/_UNI/III/2/'
 alias janos='cd /home/jnsltk/code/personal/svelte/janoslitkei.com/'
 alias kod='cd /home/jnsltk/code'
 alias c='clear'
@@ -26,6 +26,11 @@ alias wp2='feh --bg-fill /home/jnsltk/Pictures/wallpaper2.JPG'
 # GO stuff
 export GOPATH="$HOME/go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+
+# vim
+export EDITOR=nvim
+alias vim='nvim'
+alias vi='nvim'
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

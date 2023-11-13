@@ -9,9 +9,6 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# Swap alt and super, and caps and esc
-exec --no-startup-id /usr/bin/setxkbmap -option caps:swapescape
-exec --no-startup-id /usr/bin/setxkbmap -option altwin:swap_alt_win
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -231,7 +228,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10 && light > /home/
 exec --no-startup-id xautolock -time 10 -locker 'loginctl lock session' 
 # bindsym $mod+End exec --no-startup-id loginctl lock-session
 bindsym $mod+End exec --no-startup-id systemctl suspend
-bindsym $mod+Shift+End exec --no-startup-id /home/jnsltk/.dotfiles/scripts/autosleep_toggle.sh
+bindsym $mod+Shift+End exec --no-startup-id /home/jnsltk/scripts/autosleep_toggle.sh
 # picom
 exec_always --no-startup-id picom -b --config .config/picom/picom.conf
 
