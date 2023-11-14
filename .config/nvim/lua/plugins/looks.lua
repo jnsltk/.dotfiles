@@ -1,12 +1,5 @@
 return {
     {
-        'kabouzeid/nvim-jellybeans',
-        dependencies = 'rktjmp/lush.nvim',
-        init = function()
-            vim.cmd("colorscheme jellybeans")
-        end,
-    },
-    {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons', lazy = true },
         init = function()
@@ -14,8 +7,8 @@ return {
                 options = {
                     icons_enabled = false,
                     theme = 'auto',
-                    component_separators = { left = '', right = ''},
-                    section_separators = { left = '', right = ''},
+                    component_separators = '|',
+                    section_separators = '',
                     disabled_filetypes = {
                         statusline = {},
                         winbar = {},
