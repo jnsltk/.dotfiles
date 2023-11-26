@@ -1,9 +1,51 @@
 return {
     {
-        'kabouzeid/nvim-jellybeans',
-        dependencies = 'rktjmp/lush.nvim',
+        "m4xshen/catppuccinight.nvim",
+        name = "catppuccin",
+        opts = {
+            flavour = "mocha",
+            custom_highlights = function(colors)
+                return {
+                    VertSplit = { fg = colors.surface0 },
+                }
+            end,
+        },
         init = function()
-            vim.cmd("colorscheme jellybeans")
+            vim.cmd.colorscheme("catppuccin")
+        end,
+    },
+    {
+        "rcarriga/nvim-notify",
+        opts = {},
+        config = function()
+            vim.notify = require("notify")
+        end,
+    },
+    {
+        "lukas-reineke/virt-column.nvim",
+        opts = {},
+    },
+    {
+        "m4xshen/smartcolumn.nvim",
+        opts = {
+            disabled_filetypes = {
+                "netrw",
+                "NvimTree",
+                "Lazy",
+                "mason",
+                "help",
+                "text",
+                "markdown",
+                "tex",
+                "html",
+            },
+            scope = "window",
+        },
+    },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require("ibl").setup()
         end,
     },
     {
@@ -14,8 +56,8 @@ return {
                 options = {
                     icons_enabled = false,
                     theme = 'auto',
-                    component_separators = { left = '', right = ''},
-                    section_separators = { left = '', right = ''},
+                    component_separators = '|',
+                    section_separators = '',
                     disabled_filetypes = {
                         statusline = {},
                         winbar = {},
