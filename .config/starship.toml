@@ -1,6 +1,7 @@
 add_newline = false
-
+format = """$directory$character"""
 palette = "catppuccin_mocha"
+right_format = """$all"""
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

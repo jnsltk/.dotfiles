@@ -20,12 +20,12 @@
         },
         "cpu": {
             "interval": 10,
-            "format": "{}% <span color='#b4befe'></span>",
+            "format": "{usage}% <span color='#b4befe'></span>",
             "max-length": 10
         },
         "memory": {
             "interval": 10,
-            "format": "{}% <span color='#b4befe'></span>",
+            "format": "{percentage}% <span color='#b4befe'></span>",
             "max-length": 10
         },
         "clock": {

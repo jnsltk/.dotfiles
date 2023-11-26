@@ -1,9 +1,9 @@
 * {
     border: none;
     font-family: 'JetBrains Mono NF', 'Symbols Nerd Font Mono';
-    font-size: 14px;
+    font-size: 12px;
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-    min-height: 30px;
+    min-height: 25px;
 }
 
 window#waybar {
@@ -14,16 +14,16 @@ window#waybar {
     border-radius: 10px;
     background-color: #11111b;
     color: #b4befe;
-    margin-top: 8px;
-    margin-right: 8px;
+    margin-top: 4px;
+    margin-right: 4px;
     padding-top: 1px;
     padding-left: 6px;
     padding-right: 10px;
 }
 
 #custom-arch {
-  font-size: 18px;
-  margin-left: 8px;
+  font-size: 14px;
+  margin-left: 4px;
   color: #b4befe;
 }
 
@@ -36,10 +36,10 @@ window#waybar {
     border-radius: 10px;
     background-color: #11111b;
     color: #cdd6f4;
-    margin-top: 8px;
+    margin-top: 4px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 #cpu, #backlight, #bluetooth {

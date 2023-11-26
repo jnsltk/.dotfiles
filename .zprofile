@@ -7,6 +7,6 @@ export npm_config_prefix="$HOME/.local"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
-if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
-  exec starthypr
-fi
+# if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
+#   exec starthypr
+# fi
