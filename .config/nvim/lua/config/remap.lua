@@ -45,7 +45,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 -- Reload configuration without restart nvim
 -- vim.keymap.set('n', '<leader>r', ':so %<CR>')
 
-vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
+-- vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
 vim.keymap.set('n', '<leader>f', function()
     vim.lsp.buf.format()
 end)

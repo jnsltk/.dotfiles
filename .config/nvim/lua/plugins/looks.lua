@@ -1,14 +1,11 @@
 return {
     {
-        "m4xshen/catppuccinight.nvim",
+        "catppuccin/nvim",
         name = "catppuccin",
+        priority = 100,
         opts = {
             flavour = "mocha",
-            custom_highlights = function(colors)
-                return {
-                    VertSplit = { fg = colors.surface0 },
-                }
-            end,
+            transparent_background = true,
         },
         init = function()
             vim.cmd.colorscheme("catppuccin")

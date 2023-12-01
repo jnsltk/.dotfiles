@@ -14,16 +14,9 @@ fi
 export PATH
 
 # !! aliases for getting around quickly
-alias janos='cd /home/jnsltk/code/personal/svelte/janoslitkei.com/'
-alias kod='cd /home/jnsltk/code'
+alias kod='cd /Users/jnsltk/Developer'
 alias c='clear'
-alias dentigo='cd /home/jnsltk/code/gu/dentigo'
-alias wp1='feh --bg-fill /home/jnsltk/Pictures/wallpaper1.JPG'
-alias wp2='feh --bg-fill /home/jnsltk/Pictures/wallpaper2.JPG'
-
-# GO stuff
-export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+alias dentigo='cd /Users/jnsltk/Developer/gu/dentigo'
 
 # vim
 export EDITOR=nvim
@@ -36,8 +29,11 @@ alias ls='exa'
 
 # zsh-autosuggestions
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^o' autosuggest-accept
+
+# node
+source $(brew --prefix nvm)/nvm.sh
 
 # STARSHIP
 eval "$(starship init zsh)"

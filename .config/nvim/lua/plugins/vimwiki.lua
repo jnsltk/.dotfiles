@@ -7,7 +7,7 @@ return {
         vim.g.vimwiki_folding = ""
         vim.g.vimwiki_list = {
             {
-                path = '/home/jnsltk/Dropbox/vimwiki/',
+                path = '/Users/jnsltk/icloud/vimwiki',
                 syntax = 'markdown',
                 ext = '.md',
             }
