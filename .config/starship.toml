@@ -3,6 +3,9 @@ format = """$directory$character"""
 palette = "catppuccin_mocha"
 right_format = """$all"""
 
+[conda]
+format = '[$symbol$environment](dimmed green) '
+
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
