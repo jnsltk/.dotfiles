@@ -28,7 +28,7 @@ alias v='nvim'
 
 # other tools
 alias ls='exa'
-export BAT_THEME="Catppuccin-mocha"
+export BAT_THEME="Solarized (dark)"
 alias cat='bat'
 alias ping='prettyping --nolegend'
 
