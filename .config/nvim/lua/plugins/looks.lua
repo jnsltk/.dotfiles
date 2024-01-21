@@ -5,6 +5,12 @@ return {
         priority = 1000,
         opts = {},
         init = function()
+            require('solarized-osaka').setup({
+                transparent = false,
+                styles = {
+                    floats= "transparent",
+                },
+            })
             vim.cmd[[colorscheme solarized-osaka]]
         end,
     },
@@ -240,7 +246,6 @@ return {
             })
         end
     },
-    --[[
     {
         "folke/noice.nvim",
         config = function()
@@ -280,6 +285,5 @@ return {
             "rcarriga/nvim-notify",
         }
     },
-    ]]--
 }
 
