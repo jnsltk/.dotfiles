@@ -1,14 +1,11 @@
 return {
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 100,
-        opts = {
-            flavour = "mocha",
-            transparent_background = true,
-        },
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
         init = function()
-            vim.cmd.colorscheme("catppuccin")
+            vim.cmd[[colorscheme solarized-osaka]]
         end,
     },
     {
@@ -243,6 +240,7 @@ return {
             })
         end
     },
+    --[[
     {
         "folke/noice.nvim",
         config = function()
@@ -282,5 +280,6 @@ return {
             "rcarriga/nvim-notify",
         }
     },
+    ]]--
 }
 

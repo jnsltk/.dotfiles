@@ -1,3 +1,5 @@
+export ZSH="$HOME/.oh-my-zsh"
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -32,14 +34,22 @@ alias ping='prettyping --nolegend'
 
 # zsh-autosuggestions
 
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^o' autosuggest-accept
+# source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# bindkey '^k' autosuggest-accept
 
 # node
 source $(brew --prefix nvm)/nvm.sh
 
 # STARSHIP
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+
+# robby
+ZSH_THEME="robbyrussell"
+
+# omz plugins
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
