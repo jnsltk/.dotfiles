@@ -4,7 +4,7 @@ return {
 	enable_tab_bar = false,
 	font_size = 16.0,
 	window_decorations = 'RESIZE',
-    window_background_opacity = 0.95,
+    window_background_opacity = 0.90,
     macos_window_background_blur = 50,
 	keys = {
 		{

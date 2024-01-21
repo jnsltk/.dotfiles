@@ -16,7 +16,7 @@ export PATH
 # !! aliases for getting around quickly
 alias kod='cd /Users/jnsltk/Developer'
 alias c='clear'
-alias dentigo='cd /Users/jnsltk/Developer/gu/dentigo'
+alias emb='cd /Users/jnsltk/Developer/gu/embedded'
 
 # vim
 export EDITOR=nvim
@@ -26,6 +26,9 @@ alias v='nvim'
 
 # other tools
 alias ls='exa'
+export BAT_THEME="Catppuccin-mocha"
+alias cat='bat'
+alias ping='prettyping --nolegend'
 
 # zsh-autosuggestions
 
