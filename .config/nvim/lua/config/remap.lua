@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
--- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>pv", '<cmd>NvimTreeToggle<CR>')
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>pv", '<cmd>NvimTreeToggle<CR>')
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -45,7 +45,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 -- Reload configuration without restart nvim
 -- vim.keymap.set('n', '<leader>r', ':so %<CR>')
 
-vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
+-- vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
 vim.keymap.set('n', '<leader>f', function()
     vim.lsp.buf.format()
 end)
@@ -58,3 +58,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>sp", "<cmd>:set spell!<CR>", { silent = true })
+
+-- Disable F1 key to avoid accidentally triggering the help menu
+vim.keymap.set('i', '<F1>', '<nop>')

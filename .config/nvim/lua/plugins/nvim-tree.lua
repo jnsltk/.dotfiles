@@ -1,4 +1,5 @@
 return {
+    --[[
     "nvim-tree/nvim-tree.lua",
     version = "*",
     lazy = false,
@@ -10,4 +11,5 @@ return {
             actions = { open_file = { quit_on_open = true, }, },
         }
     end,
+    ]]--
 }

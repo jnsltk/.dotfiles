@@ -1,9 +1,44 @@
 return {
     {
-        'kabouzeid/nvim-jellybeans',
-        dependencies = 'rktjmp/lush.nvim',
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
         init = function()
-            vim.cmd("colorscheme jellybeans")
+            require('solarized-osaka').setup({
+                transparent = false,
+                styles = {
+                    floats= "transparent",
+                },
+            })
+            vim.cmd[[colorscheme solarized-osaka]]
+        end,
+    },
+    {
+        "lukas-reineke/virt-column.nvim",
+        opts = {},
+    },
+    {
+        "m4xshen/smartcolumn.nvim",
+        opts = {
+            disabled_filetypes = {
+                "netrw",
+                "NvimTree",
+                "Lazy",
+                "mason",
+                "help",
+                "text",
+                "markdown",
+                "tex",
+                "html",
+            },
+            scope = "window",
+        },
+    },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require("ibl").setup()
         end,
     },
     {
@@ -14,8 +49,8 @@ return {
                 options = {
                     icons_enabled = false,
                     theme = 'auto',
-                    component_separators = { left = '', right = ''},
-                    section_separators = { left = '', right = ''},
+                    component_separators = '|',
+                    section_separators = '',
                     disabled_filetypes = {
                         statusline = {},
                         winbar = {},
@@ -201,5 +236,6 @@ return {
                 },
             })
         end
-    }
+    },
 }
+
