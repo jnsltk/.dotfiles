@@ -230,7 +230,7 @@ exec --no-startup-id xautolock -time 10 -locker 'loginctl lock session'
 bindsym $mod+End exec --no-startup-id systemctl suspend
 bindsym $mod+Shift+End exec --no-startup-id /home/jnsltk/scripts/autosleep_toggle.sh
 # picom
-exec_always --no-startup-id picom -b --config .config/picom/picom.conf
+# exec_always --no-startup-id picom -b --config .config/picom/picom.conf
 
 # Redshift 
 exec --no-startup-id redshift -l 57.70716:11.96679 
