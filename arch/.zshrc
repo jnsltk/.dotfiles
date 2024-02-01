@@ -30,10 +30,10 @@ alias vi='nvim'
 alias v='nvim'
 
 # other tools
-alias ls='exa'
+# alias ls='exa'
 export BAT_THEME="Solarized (dark)"
-alias cat='bat'
-alias ping='prettyping --nolegend'
+# alias cat='bat'
+# alias ping='prettyping --nolegend'
 
 # zsh-autosuggestions
 

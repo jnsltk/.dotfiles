@@ -1,22 +1,22 @@
 # .dotfiles
 
-My configuration files for my Mac. Some things are my own, some are taken from 
+My configuration files for my Mac and Linux. Some things are my own, some are taken from 
 others and modified for my own needs. I tried to put credits wherever I could.
 
-I use stow to manage everything, so to put everything in it's place I just cd 
-into the root of this repo and run 
+I use stow to manage everything, with the help of bash scripts to automate it. Depending on 
+whether I'm on Mac or Linux, I can run 
 
 ```sh
-stow .
+./macos
 ```
 
-If for whatever reason I want to remove them I can run 
+or
 ```sh
-stow -D .
+./setup_arch
 ```
 
-My past configurations for my old linux setup can be found on separate branches if 
-you're interested.
+This allows me to separate the platform specific config files, but still share the ones
+that are the same, for example for vim.
 
 Feel free to use and modify anything!
 
