@@ -35,8 +35,8 @@ resize < l : yabai -m window --resize right:50:0; \
 # === Navigation ===
 # window focus
 cmd - h : yabai -m window --focus west
-cmd - j : yabai -m window --focus south
-cmd - k : yabai -m window --focus north
+cmd - j : yabai -m window --focus south || yabai -m window --focus stack.next
+cmd - k : yabai -m window --focus north || yabai -m window --focus stack.prev
 cmd - l : yabai -m window --focus east
 
 cmd - left : yabai -m window --focus west
@@ -57,6 +57,7 @@ cmd - 6 : yabai -m space --focus 6
 cmd - 7 : yabai -m space --focus 7
 cmd - 8 : yabai -m space --focus 8
 cmd - 9 : yabai -m space --focus 9
+cmd - 0 : yabai -m space --focus 10
 
 # create a space
 hyper - n : yabai -m space --create; \
@@ -77,6 +78,10 @@ cmd + shift - down : yabai -m window --warp south
 cmd + shift - up : yabai -m window --warp north
 cmd + shift - right : yabai -m window --warp east
 
+# Stack windows
+hyper - w : yabai -m window --stack next || yabai -m window --stack prev
+hyper - e : yabai -m window --toggle float && yabai -m window --toggle float
+
 # send window to space 
 cmd + shift - x : yabai -m window --space recent
 cmd + shift - 1 : yabai -m window --space 1
@@ -87,6 +92,8 @@ cmd + shift - 5 : yabai -m window --space 5
 cmd + shift - 6 : yabai -m window --space 6
 cmd + shift - 7 : yabai -m window --space 7
 cmd + shift - 8 : yabai -m window --space 8
+cmd + shift - 9 : yabai -m window --space 9
+cmd + shift - 0 : yabai -m window --space 10
 
 # Move focus + window to space
 cmd + ctrl - m : yabai -m window --space last; yabai -m space --focus last
