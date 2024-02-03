@@ -55,7 +55,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,7 +64,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec --no-startup-id "rofi -modi drun,run -show drun"
-bindcode $mod+40 exec --no-startup-id kitty --class 'launcher' -e '/usr/bin/sway-launcher-desktop'
+bindcode $mod+40 exec --no-startup-id wezterm start --class 'launcher' -e '/usr/bin/sway-launcher-desktop'
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -277,9 +277,6 @@ exec --no-startup-id /usr/bin/insync start &
 
 # 执行dunst
 exec --no-startup-id /usr/bin/dunst
-
-# ranger
-bindsym $mod+Shift+Return exec --no-startup-id kitty --class="ranger" ranger
 
 for_window [class="^.*"] border pixel 2
                           # class                 border  backgr. text    indicator child_border

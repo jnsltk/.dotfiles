@@ -1,9 +1,9 @@
 local wezterm = require 'wezterm'
 config = {
     enable_tab_bar = false,
-    font_size = 16.0,
+    font_size = 14.0,
     window_decorations = 'RESIZE',
-    window_background_opacity = 0.90,
+    window_background_opacity = 1,
     macos_window_background_blur = 50,
     keys = {
         {
@@ -26,7 +26,7 @@ config.colors = {
      -- The default text color
   foreground = '#9EACAD',
   -- The default background color
-  background = '#00141A',
+  background = '#000000',
 
   -- Overrides the cell background color when the current cell is occupied by the
   -- cursor and the cursor style is set to Block

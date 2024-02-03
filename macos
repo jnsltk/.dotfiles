@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 if [[ -z $STOW_FOLDERS ]]; then
-    STOW_FOLDERS="bat,git,.local,mac,neovim,scripts,tmux"
+    STOW_FOLDERS="bat,git,.local,mac,neovim,scripts,tmux,wezterm"
 fi
 
 if [[ -z $DOTFILES ]]; then
