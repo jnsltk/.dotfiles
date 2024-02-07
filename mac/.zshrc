@@ -37,7 +37,7 @@ export BAT_THEME="Solarized (dark)"
 # zsh-autosuggestions
 
 # source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# bindkey '^k' autosuggest-accept
+bindkey -s ^k autosuggest-accept
 
 # node
 source $(brew --prefix nvm)/nvm.sh

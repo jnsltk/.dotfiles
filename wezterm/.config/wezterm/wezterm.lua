@@ -8,8 +8,8 @@ config = {
     -- macos_window_background_blur = 50,
     keys = {
         {
-            key = 'f',
-            mods = 'CTRL',
+            key = 'n',
+            mods = 'SHIFT|CTRL',
             action = wezterm.action.ToggleFullScreen,
         },
     },
