@@ -18,10 +18,9 @@ export PATH
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
-# !! aliases for getting around quickly
-alias kod='cd /Users/jnsltk/Developer'
+HOMEBREW_NO_AUTO_UPDATE=1 
+
 alias c='clear'
-alias emb='cd /Users/jnsltk/Developer/gu/embedded'
 
 # vim
 export EDITOR=nvim
