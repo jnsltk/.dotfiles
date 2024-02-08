@@ -31,18 +31,13 @@ alias v='nvim'
 
 export BAT_THEME="Solarized (dark)"
 
-# zsh-autosuggestions
-
-
 # robby
 ZSH_THEME="robbyrussell"
 
 # omz plugins
 plugins=(git zsh-autosuggestions)
 
-# source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^k' autosuggest-accept
-bindkey -s ^k autosuggest-accept
-
 source $ZSH/oh-my-zsh.sh
+
+bindkey ^o autosuggest-accept
 

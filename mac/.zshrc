@@ -37,7 +37,6 @@ export BAT_THEME="Solarized (dark)"
 # zsh-autosuggestions
 
 # source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey -s ^k autosuggest-accept
 
 # node
 source $(brew --prefix nvm)/nvm.sh
@@ -52,6 +51,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+bindkey ^o autosuggest-accept
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
