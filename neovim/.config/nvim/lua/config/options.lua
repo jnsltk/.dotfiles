@@ -8,6 +8,8 @@ vim.opt.shiftwidth = 4;
 vim.opt.expandtab = true;
 
 vim.opt.smartindent = true;
+-- disable continuation of comments
+vim.opt.formatoptions:remove { "c", "r", "o" }
 
 vim.opt.wrap = true;
 
