@@ -17,9 +17,9 @@ sketchybar --bar height=30        \
 
 sketchybar --default updates=when_shown                       \
                      drawing=on                               \
-                     icon.font="$NERD_FONT:Regular:14.0"      \
+                     icon.font="$NERD_FONT:Regular:12.0"      \
                      icon.color=0xffffffff                    \
-                     label.font="$FONT:Light:14.0"            \
+                     label.font="$FONT:Light:12.0"            \
                      label.color=0xffffffff                   \
                      label.padding_left=4                     \
                      label.padding_right=4                    \
@@ -30,7 +30,6 @@ source $ITEM_DIR/spaces.sh
 source $ITEM_DIR/window_title.sh
 source $ITEM_DIR/clock.sh
 source $ITEM_DIR/battery.sh
-source $ITEM_DIR/ram.sh
 source $ITEM_DIR/cpu.sh
 source $ITEM_DIR/vpn.sh
 source $ITEM_DIR/wifi.sh
