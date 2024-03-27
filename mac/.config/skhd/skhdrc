@@ -79,10 +79,8 @@ cmd + shift - up : yabai -m window --warp north
 cmd + shift - right : yabai -m window --warp east
 
 # Stack windows
-hyper - w : yabai -m window --stack next || yabai -m window --stack prev; \
-        yabai -m config left_padding 15
-hyper - e : yabai -m window --toggle float && yabai -m window --toggle float; \
-        yabai -m config left_padding 5
+hyper - w : yabai -m window --stack next || yabai -m window --stack prev; 
+hyper - e : yabai -m window --toggle float && yabai -m window --toggle float; 
 
 # send window to space 
 cmd + shift - x : yabai -m window --space recent

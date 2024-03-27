@@ -8,5 +8,5 @@
 [init]
 	defaultBranch = main
 [alias]
-    chalmers = "!sh $HOME/.dotfiles/scripts/chalmers-git.sh"
-    clone-worktree = "!sh $HOME/.dotfiles/scripts/git-clone-bare-for-worktrees.sh"
+    chalmers = "!sh $HOME/scripts/chalmers-git.sh"
+    clone-worktree = "!sh $HOME/scripts/git-clone-bare-for-worktrees.sh"
