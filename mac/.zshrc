@@ -1,5 +1,3 @@
-export ZSH="$HOME/.oh-my-zsh"
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -20,6 +18,9 @@ LC_ALL=en_US.UTF-8
 
 HOMEBREW_NO_AUTO_UPDATE=1 
 
+# go
+export PATH=$PATH:$(go env GOPATH)/bin/
+
 alias c='clear'
 
 # vim
@@ -29,28 +30,22 @@ alias vi='nvim'
 alias v='nvim'
 
 # other tools
-# alias ls='exa'
-export BAT_THEME="Solarized (dark)"
+alias xal='exa -al'
+export BAT_THEME="Catppuccin-mocha"
 # alias cat='bat'
 # alias ping='prettyping --nolegend'
 
+alias vm=multipass
+
 # zsh-autosuggestions
 
-# source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # node
 source $(brew --prefix nvm)/nvm.sh
 
 # STARSHIP
-# eval "$(starship init zsh)"
-
-# robby
-ZSH_THEME="robbyrussell"
-
-# omz plugins
-plugins=(git zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
 
 bindkey ^o autosuggest-accept
 

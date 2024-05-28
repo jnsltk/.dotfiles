@@ -1,17 +1,10 @@
 return {
-    {
-        "craftzdog/solarized-osaka.nvim",
-        lazy = false,
+    { 
+        "catppuccin/nvim",
+        name = "catppuccin",
         priority = 1000,
-        opts = {},
         init = function()
-            require('solarized-osaka').setup({
-                styles = {
-                    floats= "dark",
-                },
-                dim_inactive = true,
-            })
-            vim.cmd[[colorscheme solarized-osaka]]
+            vim.cmd[[colorscheme catppuccin-mocha]]
         end,
     },
     {

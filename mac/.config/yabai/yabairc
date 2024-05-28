@@ -39,6 +39,9 @@ yabai -m config mouse_action1               move
 yabai -m config mouse_action2               resize
 yabai -m config external_bar 		    all:00:30
 
+# Turn off on space five (messaging apps)
+yabai -m config --space 5 layout float
+
 # ===== Rules ==================================
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
