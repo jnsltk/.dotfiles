@@ -8,7 +8,7 @@ hyper - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # === launch commands ===
 # open wezterm
-cmd - return : open -na /Applications/WezTerm.app
+# cmd - return : open -na /Applications/WezTerm.app
 # open arc
 cmd + shift - return : open -na /Applications/Arc.app
 # open finder
