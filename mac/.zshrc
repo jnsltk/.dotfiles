@@ -29,8 +29,7 @@ alias vi='nvim'
 alias v='nvim'
 
 # other tools
-# alias ls='exa'
-export BAT_THEME="Solarized (dark)"
+export BAT_THEME="Catppuccin-mocha"
 # alias cat='bat'
 # alias ping='prettyping --nolegend'
 
@@ -56,14 +55,14 @@ bindkey ^o autosuggest-accept
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jnsltk/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/jnsltk/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jnsltk/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/jnsltk/miniconda3/bin:$PATH"
+        export PATH="/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
