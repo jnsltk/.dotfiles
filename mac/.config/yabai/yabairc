@@ -1,0 +1,17 @@
+# yabairc -- based on sgoodluck's config: https://github.com/sgoodluck/mac-dotfiles/
+# === Load Scripting Additions ===
+
+sudo nvram boot-args=-arm64e_preview_abi
+sudo yabai --uninstall-sa
+sudo yabai --install-sa
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+sudo yabai --load-sa
+
+# === Tiling setting ===
+
+yabai -m config layout                      float
+
+echo "yabai: configuration loaded...\\n"
+

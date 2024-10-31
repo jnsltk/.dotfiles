@@ -68,3 +68,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jnsltk/.cache/lm-studio/bin"
