@@ -29,7 +29,7 @@ alias vi='nvim'
 alias v='nvim'
 
 # other tools
-export BAT_THEME="Catppuccin-mocha"
+export BAT_THEME="Solarized (dark)"
 # alias cat='bat'
 # alias ping='prettyping --nolegend'
 
@@ -52,6 +52,16 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 bindkey ^o autosuggest-accept
+bindkey -s ^f "tmux-sessionizer\n"
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jnsltk/.cache/lm-studio/bin"
+
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH=$PATH:~/.composer/vendor/bin
+
+export PATH=$PATH:/Users/jnsltk/go/bin/
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -68,6 +78,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jnsltk/.cache/lm-studio/bin"

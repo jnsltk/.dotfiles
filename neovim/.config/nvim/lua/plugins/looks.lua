@@ -1,10 +1,15 @@
 return {
     { 
-        "catppuccin/nvim",
-        name = "catppuccin",
+        "craftzdog/solarized-osaka.nvim",
         priority = 1000,
         init = function()
-            vim.cmd[[colorscheme catppuccin-mocha]]
+            require('solarized-osaka').setup({
+                styles = {
+                    floats= "dark",
+                },
+                dim_inactive = true,
+            })
+            vim.cmd[[colorscheme solarized-osaka]]
         end,
     },
     {

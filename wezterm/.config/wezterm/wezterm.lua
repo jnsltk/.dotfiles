@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 config = {
-    color_scheme = 'Catppuccin Mocha',
+    color_scheme = 'GitHub Dark',
     enable_tab_bar = false,
     font = wezterm.font 'JetBrains Mono NL',
     font_size = 14.0,
@@ -8,7 +8,7 @@ config = {
     window_background_opacity = 1,
     window_padding = {
         left = 15,
-        right = 15,
+        right = 14,
         top = 20,
         bottom = 2,
     },
