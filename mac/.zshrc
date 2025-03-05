@@ -28,6 +28,13 @@ alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 
+# git
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git push'
+
 # other tools
 export BAT_THEME="Solarized (dark)"
 # alias cat='bat'

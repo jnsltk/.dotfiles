@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 config = {
-    color_scheme = 'GitHub Dark',
+    color_scheme = 'Github Dark (Gogh)',
     enable_tab_bar = false,
     font = wezterm.font 'JetBrains Mono NL',
     font_size = 14.0,
