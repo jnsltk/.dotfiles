@@ -1,9 +1,10 @@
 return {
-    { 
+    {
         "craftzdog/solarized-osaka.nvim",
         priority = 1000,
         init = function()
             require('solarized-osaka').setup({
+                transparent = false,
                 styles = {
                     floats= "dark",
                 },

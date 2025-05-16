@@ -34,8 +34,10 @@ alias ga='git add'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gp='git push'
+alias gitviz='git log --all --topo-order --graph --show-signature'
 
 # other tools
+alias fa='tree --gitignore .'
 export BAT_THEME="Solarized (dark)"
 # alias cat='bat'
 # alias ping='prettyping --nolegend'

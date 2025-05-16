@@ -3,4 +3,3 @@ require("config.remap")
 require("config.autocmds")
 require("config.lazy")
 require("config.functions")
-
