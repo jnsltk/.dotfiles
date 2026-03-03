@@ -1,7 +1,12 @@
 return {
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        dependencies = { {'nvim-lua/plenary.nvim'} },
+        'nvim-telescope/telescope.nvim',
+        version = '*',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            -- optional but recommended
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        },
         init = function()
             local telescope = require("telescope")
             local telescopeConfig = require("telescope.config")
@@ -31,7 +36,7 @@ return {
             vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
             vim.keymap.set('n', '<C-p>', builtin.git_files, {})
             vim.keymap.set('n', '<leader>ps', function()
-                builtin.grep_string({ search = vim.fn.input("Grep > ") }); 
+                builtin.grep_string({ search = vim.fn.input("Grep > ") });
             end)
         end
     },

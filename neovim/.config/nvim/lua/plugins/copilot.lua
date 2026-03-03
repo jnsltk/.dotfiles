@@ -1,5 +1,7 @@
 return {
+--[[
     {
         "github/copilot.vim"
     }
+--]]
 }

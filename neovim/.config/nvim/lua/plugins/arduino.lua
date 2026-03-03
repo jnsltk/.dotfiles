@@ -1,4 +1,5 @@
 return {
+    --[[
     {
         'stevearc/vim-arduino',
         cmd = {
@@ -18,4 +19,5 @@ return {
             vim.keymap.set("n", "<Leader>au", "<CMD>ArduinoUpload<CR>", silent)
         end
     }
+    --]]
 }

@@ -1,3 +1,11 @@
-# theme = dark:GitHub-Dark-Default,light:GitHub-Light-Default
 theme = solarized-osaka
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+shell-integration = zsh
 
+macos-titlebar-style = tabs
+macos-option-as-alt = true 
+window-save-state = always
+window-vsync = true
+window-colorspace = display-p3
+quick-terminal-screen = macos-menu-bar
+title = " "
